@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+     .main {
+
+background-color: gray;
+height: 500px;
+width: 400px;
+margin: 0 auto;
+border-radius: 20px;
+
+}
+
+
+.inner {
+
+background-color: black;
+height: 120px;
+width: 350px;
+margin: 0 auto;
+border-radius: 20px;
+position: relative;
+top: 25px;
+
+}
+
+.inner2 {
+
+background-color: black;
+height: 302px;
+width: 350px;
+margin: 0 auto;
+border-radius: 20px;
+position: relative;
+top: 50px;
+
+}
+
+.inner3 {
+
+background-color: rgb(132, 154, 95);
+height: 80px;
+width: 310px;
+margin: 0 auto;
+position: relative;
+top: 21px;
+font-size: 36px;
+display: flex;
+align-items: center;
+padding: 0 5px;
+justify-content: end;
+overflow: hidden;
+
+
+}
+
+.inner2 button {
+min-height: 40px;
+min-width:40px;
+font-size: 20px;
+font-weight: bold;
+}   
+    </style>
+</head>
+<body>
+    <script>
+        function screendata(item){
+let screendata=document.getElementById("mainscreen").innerHTML
+if(screendata=='0')
+screendata=""
+screendata+=item
+document.getElementById("mainscreen").innerHTML=screendata
+        }
+         function clearlastdigit(){
+            let screendata=document.getElementById("mainscreen").innerHTML
+screendataupdated=screendata.slice(0,-1)
+document.getElementById("mainscreen").innerHTML=screendataupdated
+         }
+         function calculate(){
+            let screendata=document.getElementById("mainscreen").innerHTML
+            if(screendata[0] =="√"){
+                let number=screendata.slice(1)
+                document.getElementById("mainscreen").innerHTML=Math.sqrt(number)
+            }
+            
+            else{
+                document.getElementById("mainscreen").innerHTML=eval(screendata)
+            }
+         }
+         function clearscreendata(){
+            document.getElementById("mainscreen").innerHTML = "0"
+         }
+    </script>
+    <div class="main">
+        <div class="inner">
+            <div class="inner3" id="mainscreen">0</div>
+        </div>
+        <div class="inner2">
+            <div style="display: flex;justify-content: space-around; padding:20px 10px">
+                <button type="button" onclick="screendata(7)" >7</button>
+                <button type="button" onclick="screendata(8)" >8</button>
+                <button type="button" onclick="screendata(9)">9</button>
+                <button type="button" onclick="screendata('%')">%</button>
+                <button type="button" onclick="screendata('/')">/</button>
+            </div> 
+            <div style="display: flex;justify-content: space-around; padding:13px 10px">
+                <button type="button" onclick="screendata(4)">4</button>
+                <button type="button" onclick="screendata(5)">5</button>
+                <button type="button" onclick="screendata(6)">6</button>
+                <button type="button"onclick="screendata('*')">x</button>
+                <button type="button"onclick="screendata('+')">+</button>
+            </div> 
+            <div style="display: flex;justify-content: space-around; padding:20px 10px">
+                <button type="button"onclick="screendata(1)" >1</button>
+                <button type="button"onclick="screendata(2)" >2</button>
+                <button type="button"onclick="screendata(3)" >3</button>
+                <button type="button"onclick="screendata('-')" >-</button>
+                <button type="button"onclick="calculate()" >=</button>
+            </div> 
+            <div style="display: flex;justify-content: space-around; padding:20px 10px">
+                <button type="button" onclick="screendata(0)">0</button>
+                <button type="button" onclick="clearlastdigit()">Del</button>
+                <button type="button" onclick="screendata('.')">.</button>
+                <button type="button" onclick="screendata('√')" >√</button>
+                <button type="button" onclick="clearscreendata()">ON</button>
+            </div> 
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+   
+</head>
+<body>
+    <label for="">enter your percentage</label>
+    <input type="text" id="inp">
+    <button type="submit" onclick="grade()">Submit</button>
+    <div id="main"></div>
+    <script>
+        function grade(){
+var per=document.getElementById("inp").value;
+ switch(per){
+    case per>=90:
+    document.getElementById("main").innerHTML="A+";
+    break;
+
+    case per>=80:
+    document.getElementById("main").innerHTML="A";
+    break; 
+
+    case per>=70:
+    document.getElementById("main").innerHTML="B";
+     break;
+
+    case per>=60:
+    document.getElementById("main").innerHTML="C";
+     break; 
+
+    case per>=50:
+    document.getElementById("main").innerHTML="D";
+    break; 
+
+    case per>=40:
+    document.getElementById("main").innerHTML="E";
+    break;
+
+    case per<=40:
+     document.getElementById("main").innerHTML="Fail";
+    break; 
+            }
+        }
+    </script>
+</body>
+</html>

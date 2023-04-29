@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marksheet</title>
+    <style>
+table{
+    height: 200px;
+    width: 250px;
+    margin: 0 auto;
+}
+#z{
+    position: relative;
+    left: 10px;}
+ #y{
+    position: relative;
+    left: 12px;
+    }
+    #x{
+        position: relative;
+        left: 18px;
+    }
+    #v{
+        position: relative;
+        left: 10px;
+    }
+    </style>
+</head>
+<body>
+    
+    <label for="">chemistry:</label>
+    <input type="text" id="marks">
+<br><br>
+    <label for="">Biology:</label>
+    <input type="text" id="z">
+<br><br>
+    <label for="">English:</label>
+    <input type="text" id="y">
+<br><br>
+    <label for="">Math's:</label>
+    <input type="text" id="x">
+<br><br>
+    <label for="">Physics:</label>
+    <input type="text" id="v" >
+<br><br>
+    <button type="submit" onclick="result()" style="position:relative ;top: 10px;">Submit</button>
+    <br><br><br>
+    
+    <div style="position: relative;left:890px;top: -100px;font-weight: bold;font-size: 25px;">Marksheet</div>
+    <table border="1" style="position: relative;top: -100px;">
+    <tr>
+        <td>Chemistry</td>
+        <td>100</td>
+        <td style="width: 50px;" id="1"></td>
+    </tr>
+
+    <tr>
+        <td>Biology</td>
+        <td>100</td>
+        <td id="2"></td>
+    </tr>
+
+    <tr>
+        <td>English</td>
+        <td>100</td>
+        <td id="3"></td>
+    </tr>
+
+    <tr>
+        <td>Math's</td>
+        <td>100</td>
+        <td id="4"></td>
+    </tr>
+
+    <tr>
+        <td>Physics</td>
+        <td>100</td>
+        <td id="5"></td>
+    </tr>
+
+    </table>
+    <table>
+        <tr>
+            <td>Total Marks:</td>
+            <td >500</td>
+        </tr>
+        <tr>
+            <td>Obtained Marks:</td>
+            <td id="w"></td>
+        </tr>
+        <tr>
+            <td>Percentage:</td>
+            <td id="e"></td>
+        </tr>
+        <tr>
+            <td>Grade:</td>
+            <td id="r"></td>
+        </tr>
+    </table>
+    <script>
+        function result(){
+            let a= parseFloat(document.getElementById("marks").value);
+            let b=parseFloat(document.getElementById("z").value);
+            let c=parseFloat(document.getElementById("y").value);
+            let d=parseFloat(document.getElementById("x").value);
+            let e=parseFloat(document.getElementById("v").value);
+            
+      document.getElementById("1").innerHTML=a;
+      document.getElementById("2").innerHTML=b;
+      document.getElementById("3").innerHTML=c;
+      document.getElementById("4").innerHTML=d;
+      document.getElementById("5").innerHTML=e;
+
+     let j= document.getElementById("w").innerHTML=(a+b+c+d+e);
+      let t=document.getElementById("e").innerHTML=eval(j/500*100);
+      
+      if(t>=90){
+        var u=document.getElementById("r").style="color:green";
+        document.getElementById("r").innerHTML="A+";
+      }
+      else if(t>=80){
+        var u=document.getElementById("r").style="color:green";
+        document.getElementById("r").innerHTML="A";
+      }
+      else if(t>=70){
+        var u=document.getElementById("r").style="color:green";
+        document.getElementById("r").innerHTML="B";
+      }
+      else if(t>=60){
+        var u=document.getElementById("r").style="color:green";
+        document.getElementById("r").innerHTML="C";
+      }
+      else if(t>=50){
+        var u=document.getElementById("r").style="color:green";
+        document.getElementById("r").innerHTML="D";
+      }
+      else if(t>=40){
+        var u=document.getElementById("r").style="color:green";
+        document.getElementById("r").innerHTML="E";
+      }
+      else{
+        var s= document.getElementById("r").style="color:red";
+        document.getElementById("r").innerHTML="FAIL";
+      }
+        }
+    </script>
+</body>
+</html>

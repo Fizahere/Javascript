@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+
+<body>
+
+    <script>
+
+        class Animal {
+
+            constructor(name, food) {
+
+                this.c_name = name;
+                this.c_food = food;
+
+            }
+
+            eat() {console.log(this.c_name + " " + " eats" + " " + this.c_food)}
+        }
+
+        class Reptiles extends Animal {
+            eat() {console.log(this.c_name + " " + " eats" + " " + this.c_food)}
+        }
+
+        let obj = new Animal("cat", "milk");
+        obj.eat();
+
+        let obj2 = new Reptiles("snake", "flies");
+        obj2.eat();
+
+    </script>
+
+</body>
+
+</html>

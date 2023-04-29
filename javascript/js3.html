@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js3</title>
+</head>
+<body>
+    <label for="">enter any number</label>
+    <input type="text" id="inp">
+    <br><br>
+    <label for="">enter second number</label>
+    <input type="text" id="even">
+    <button type="submit" onclick="fun()">multiply</button>
+    <button type="submit" onclick="add()">Add</button>
+    <button type="submit" onclick="sub()">subtract</button>
+    <button type="submit" onclick="div()">divide</button>
+    <div id="main"></div>
+
+    <script>
+function fun() {
+
+var ph= document.getElementById("inp").value;
+var sh= document.getElementById("even").value;
+var res=ph*sh
+document.getElementById("main").innerHTML=res
+}
+function add(){
+var a=parseFloat ( document.getElementById("inp").value)
+var f=parseFloat ( document.getElementById("even").value)
+var b=( a+f)
+  document.getElementById("main").innerHTML=b
+}
+function sub(){
+    var c=document.getElementById("inp").value
+    var m=document.getElementById("even").value
+var d=c-m;
+document.getElementById("main").innerHTML=d
+}
+function div(){
+    var e=document.getElementById("inp").value
+    var y=document.getElementById("even").value
+var f=e/y
+document.getElementById("main").innerHTML=f
+}
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <div id="main"></div>
+    <script>
+        // let object={name:"Fiza",age:17,email:"fiza@gmail.com"};
+        // document.getElementById("main").innerhtml =object.name +" " +object.age +" "+ object.email;
+
+        let object={name:"Fiza",age:17,email:"fiza@gmail.com"};
+        for(var i in object){
+        document.getElementById("main").innerHTML += i + ":" + object[i] + "<br>"}
+    </script>
+</body>
+</html>

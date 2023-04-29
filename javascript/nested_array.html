@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested_Array</title>
+</head>
+<body>
+    <div id="q"></div>
+    <script>
+        let a=[
+            ["Ali",21,"karachi","ali21@gmail.com"],
+            ["Hamza",22,"Islamabad","hamza22@gmail.com"],
+            ["Fiza",17,"Karachi","fiza17@gmail.com"],
+            ["Iman",19,"Karachi","iman19@gmail.com"],
+            ["Iqra",16,"Lahore","iqra16@gmail.com"],
+            ["Kinza",22,"Karachi","kinza22@gmail.com"],
+        ]
+        document.getElementById("q").innerHTML=
+        a[2][0]+" "+a[2][1]+" "+a[2][2]+" "+a[2][3]+
+        "<br>"+"<br>"+a[5][0]+" "+a[5][1]+" "+a[5][2]+" "+a[5][3]+
+        "<br>"+"<br>"+a[0][0]+" "+a[0][1]+" "+a[0][2]+" "+a[0][3]+
+        "<br>"+"<br>"+a[1][0]+" "+a[1][1]+" "+a[1][2]+" "+a[1][3]+
+        "<br>"+"<br>"+a[3][0]+" "+a[3][1]+" "+a[3][2]+" "+a[3][3]+
+        "<br>"+"<br>"+a[4][0]+" "+a[4][1]+" "+a[4][2]+" "+a[4][3];
+        // a[0]+a[3]+a[1]+a[4]+a[5]+"<br>";
+    </script>
+</body>
+</html>

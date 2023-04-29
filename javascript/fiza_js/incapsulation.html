@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>incapsulation</title>
+</head>
+<body>
+    <script>
+        // class Student {
+        //     eat(name,food){
+        //         return("name" + name)
+        //     }
+        // }
+        // let obj = new Student();
+        // obj.eat("ali","icecream");
+
+class Student {
+
+set_details(name, email, atm){
+this.name = name;
+this.email=email;
+this.atm=atm;
+}
+
+get_details(){
+    return this.name + " " + this.email + " " + this.atm ;
+}
+
+}
+
+let obj = new Student();
+obj.set_details("ali","ali@gmail.com","123344");
+console.log(obj.get_details())
+
+    </script>
+</body>
+</html>
