@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v_counter</title>
+    <style>
+        .visits{
+            background-color: thistle;
+            border-radius: 100%;
+            padding: 2%;
+        }
+    </style>
+</head>
+<body>
+    <span class="visits"></span>
+
+    <script>
+let counter = document.querySelector(".visits");
+let visitors = localStorage.getItem("p_views");
+
+if(visitors){
+    visitors = Number(visitors) + 1;
+    localStorage.setItem("p_views" , visitors)
+}
+else{
+    visitors = 1;
+    localStorage.setItem("p_views" , 1)
+}
+counter.innerHTML = visitors;
+    </script>
+
+</body>
+</html>
