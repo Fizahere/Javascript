@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="flex-center">
+        <h3>
+            L<applet class="blue">o</applet>g
+            <applet class="blue"> I</applet>n
+        </h3>
+        <div id="form">
+            <div class="mt">
+                <input type="email" id="LoginEmail" placeholder="email address**" class="input" class="input" />
+                <br /><br />
+                <span id="emailError"></span>
+            </div>
+            <div class="mt">
+                <input type="text" value="" id="LoginPassword" placeholder="password**" class="input" />
+                <br /><br />
+                <span id="passError"></span>
+            </div>
+            <span id="loginError"></span>
+            <div>
+                <input type="submit" onclick="submitForm()" id="button" />
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+</body>
+
+</html>

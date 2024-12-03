@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="flex-center">
+        <h3>
+            S<applet class="blue">ig</applet>n
+            <applet class="blue"> U</applet>p
+        </h3>
+        <div id="form">
+            <div>
+                <input type="text" id="Name" placeholder="name**" class="input" />
+                <br /><br />
+                <span id="nameError"></span>
+            </div>
+            <div class="mt">
+                <input type="text" id="UserName" placeholder="username**" class="input" />
+                <br /><br />
+                <span id="userNameError"></span>
+            </div>
+            <div class="ml">
+                <span class="blue" onclick="genrateuserName()">suggest username?</span>
+            </div>
+            <div class="mt">
+                <input type="email" id="Email" placeholder="email address**" class="input" class="input" />
+                <br /><br />
+                <span id="emailError"></span>
+            </div>
+            <div class="mt">
+                <input type="text" value="" id="Password" placeholder="password**" class="input" />
+                <br /><br />
+                <span id="passError"></span>
+            </div>
+            <div class="ml">
+                <span class="blue" onclick="genratePassword()">suggest password?</span>
+            </div>
+            <span id="error"></span>
+            <div>
+                <input type="submit" onclick="submitForm()" id="button" />
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+</body>
+
+</html>

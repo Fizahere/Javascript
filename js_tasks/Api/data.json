@@ -1,0 +1,130 @@
+{
+    "posts": [
+        {
+            "id": 1001,
+            "name": "Food",
+            "location": "Pakistan,Karachi",
+            "image": "",
+            "likes": 43535,
+            "views": 54345345,
+            "isSave": false
+        },
+        {
+            "id": 1002,
+            "name": "Drink",
+            "location": "Pakistan,Lahore",
+            "image": "",
+            "likes": 435435,
+            "views": 20394,
+            "isSave": true
+        },
+        {
+            "id": 1003,
+            "name": "Outfits",
+            "location": "Pakistan,Karachi",
+            "image": "",
+            "likes": 435345,
+            "views": 345346,
+            "isSave": false
+        },
+        {
+            "id": 1004,
+            "name": "Skincare",
+            "location": "Pakistan,Islamabad",
+            "image": "",
+            "likes": 100998,
+            "views": 45657,
+            "isSave": true
+        },
+        {
+            "id": 1005,
+            "name": "Coding",
+            "location": "India,Dehli",
+            "image": "",
+            "likes": 128921,
+            "views": 23312324,
+            "isSave": false
+        },
+        {
+            "id": 1006,
+            "name": "Recipes",
+            "location": "India,Dehli",
+            "image": "",
+            "likes": 343455,
+            "views": 2045504,
+            "isSave": true
+        },
+        {
+            "id": 1007,
+            "name": "Workout",
+            "location": "Korea,Seoul",
+            "image": "",
+            "likes": 34534545,
+            "views": 4367657,
+            "isSave": false
+        },
+        {
+            "id": 1008,
+            "name": "Study",
+            "location": "France,Los-angeles",
+            "image": "",
+            "likes": 125435350,
+            "views": 234546,
+            "isSave": true
+        },
+        {
+            "id": 1009,
+            "name": "Furniture",
+            "location": "France,San-fransisco",
+            "image": "",
+            "likes": 534565,
+            "views": 547768663,
+            "isSave": false
+        },
+        {
+            "id": 2000,
+            "name": "Wisdom",
+            "location": "Pakistan,Islamabad",
+            "image": "",
+            "likes": 76876698,
+            "views": 8967587587,
+            "isSave": true
+        },
+        {
+            "id": 2001,
+            "name": "Furniture",
+            "location": "Pakistan,Lahore",
+            "image": "",
+            "likes": 123123424,
+            "views": 324325345,
+            "isSave": false
+        },
+        {
+            "id": 2002,
+            "name": "Furniture",
+            "location": "France,San-fransisco",
+            "image": "",
+            "likes": 534565,
+            "views": 547768663,
+            "isSave": false
+        },
+        {
+            "id": 2003,
+            "name": "Furniture",
+            "location": "France,San-fransisco",
+            "image": "",
+            "likes": 534565,
+            "views": 547768663,
+            "isSave": false
+        },
+        {
+            "id": 2004,
+            "name": "Science Fiction",
+            "location": "USA",
+            "image": "/Users/fiza/Documents/images/instagram/Image-04.jpg",
+            "likes": 324665,
+            "views": 20023464,
+            "isSave": true
+        }
+    ]
+}

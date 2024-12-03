@@ -1,0 +1,60 @@
+html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+#button {
+    background-color: cornflowerblue;
+    color: white;
+    width: 20rem;
+    padding: 10px;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid cornflowerblue;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.input {
+    width: 20rem;
+    padding: 10px;
+    height: 2.5rem;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+#form {
+    padding: 10px;
+}
+
+.mt {
+    margin-top: 20px;
+}
+
+.ml {
+    margin-left: 170px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.blue {
+    color: cornflowerblue;
+}
